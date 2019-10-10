@@ -1,0 +1,38 @@
+.boxPerChar{
+	width: 50px;
+	height: 50px;
+	background: pink;
+	font-size: 32px;
+	margin-left: 10px;
+	float: left;
+}
+
+.boxWord{
+	width: 50px;
+	height: 50px;
+	background: cyan;
+	font-size: 32px;
+	margin-left: 10px;
+	float: left;
+}
+
+#containerBelakang{
+	width: 300px;
+	height: 100px;
+	background: pink;
+	font-size: 32px;
+	float: left;
+}
+
+/*#containerDepan{
+	width: 300px;
+	height: 100px;
+	background: green;
+	position: absolute;
+	font-size: 32px;
+	float: left;
+}*/
+
+.hideTheBox{
+	visibility: hidden !important; 
+}
