@@ -43,7 +43,24 @@ const server = http.createServer((req, res) => {
                 fs.readFile('assets/dictionary.txt', (err, data) => {
                     if (err) {
                         res.writeHead(404, 'File not found', {
-                            ContentType: 'text/html'
+                            ContentType: 'application/json'
+                        });
+                    }
+                    res.writeHead(200, {
+                        'ContentType': 'application/json'
+                    })
+                    let str = data.toString();
+                    const arr = str.split(',');
+                    console.log(arr);
+                    res.write(JSON.stringify(arr))
+                    res.end()
+                })
+            }
+            else if (req.url === '/keywords') {
+                fs.readFile('assets/keywords.txt', (err, data) => {
+                    if (err) {
+                        res.writeHead(404, 'File not found', {
+                            ContentType: 'application/json'
                         });
                     }
                     res.writeHead(200, {
@@ -66,7 +83,11 @@ const server = http.createServer((req, res) => {
                 fs.access(filePath, fs.F_OK, (err) => {
                     if (err) {
                         console.error(err)
-                        return
+                        res.writeHead(404, {
+                            'ContentType': 'text/html'
+                        })
+                        res.write('File not found');
+                        res.end();
                     }
 
                     let contentType = 'text/html';
@@ -97,6 +118,7 @@ const server = http.createServer((req, res) => {
             break;
 
         default:
+
             break;
     }
 });
