@@ -1,0 +1,99 @@
+body{
+    background: #202833;
+    font-family: arial;
+    padding-left: 10%;
+    padding-top: 100px;
+}
+
+.boxWord{
+	width: 70px;
+	height: 70px;
+	background: rgba(197, 198, 200, 0.28);
+    color: #66fcf1;
+	font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: #66fcf1;
+	margin-left: 30px;
+    box-sizing: border-box;
+	float: left;
+}
+
+.conlabel{
+    width: relative;
+    height: relative;
+    color: #66fcf1;
+    margin-bottom:  30px;
+    font-size: 36px;
+}
+
+#containerWord{
+	width: relative;
+	height: 150px;
+}
+
+.keyboard{
+    width: relative;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.keyburdtton{
+    width: 58px;
+	height: 58px;
+	background: rgba(197, 198, 200, 0.14);
+    color: #c5c6c8;
+	font-size: 44px;
+    text-align: center;
+    border-width: 1px;
+    border-color: #202833;
+    box-sizing: border-box;
+    transition: background 0.5s, color 1s, width 0.5s, height 0.5s;
+}
+
+.keyburdtton:hover{
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    background: rgba(197, 198, 200, 0.38);
+    color: #66fcf1;
+}
+
+.keyburdttonClicked{
+    width: 58px;
+	height: 58px;
+    background: rgba(197, 198, 200, 0.07) !important;
+    color: rgba(197, 198, 200, 0.17);
+    font-size: 44px;
+    text-align: center;
+    border-width: 1px;
+    border-color: #202833;
+    box-sizing: border-box;
+}
+
+.gameinterface{
+    width: 750px;
+    height: 300px;
+    background: transparent;
+    float: left;
+}
+
+.gameanimation{
+    width: relative;
+    height: relative;
+    background: red;
+    float: left;
+}
+
+.image{
+    width: 270px;
+    height: 270px;
+    background: url("image/nyawa0.png");
+    background-size: 600px 337.5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
