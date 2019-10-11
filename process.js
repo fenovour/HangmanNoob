@@ -7,5 +7,13 @@ function clickWord(key) {
     console.log(word);
     //indexWord = words.indexOf(key);
     //document.getElementById('key-' + word).disabled();
+    for(i=0;i<kata.length;i++){
+        if(document.getElementById("underscore"+i).classList[1] == btoa("salt"+word)){
+            document.getElementById("underscore"+i).innerHTML = word;
+            document.getElementById("underscore"+i).style.border = "none";
+            document.getElementById("underscore"+i).style.background = "transparent";
+        }
+    }
+    
     return word;
 }
