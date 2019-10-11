@@ -27,8 +27,6 @@ for(i=0;i<kata.length;i++){
 	
 }
 
-exports.kata = kata;
-
 //document.querySelectorAll("div")[2].classList.add("hideTheBox");
 
 
