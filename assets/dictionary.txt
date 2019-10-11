@@ -1,4 +1,1 @@
-febry,
-hasan,
-nandyo,
-satria
+febry,hasan,nandyo,satria
