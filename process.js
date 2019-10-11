@@ -1,6 +1,9 @@
+// const { kata } = require('./js-nandyo');
+
 let word = null;
 let words = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','g','r','s','t','u','v','w','x','y','z'];
 let indexWord = null;
+let lives = 5;
 
 function clickWord(key) {
     word = key;
@@ -12,8 +15,20 @@ function clickWord(key) {
             document.getElementById("underscore"+i).innerHTML = word;
             document.getElementById("underscore"+i).style.border = "none";
             document.getElementById("underscore"+i).style.background = "transparent";
+            //alert("benarrrrrrrr");
+        }
+        else{
+            //alert("salaaahh");
         }
     }
-    
-    return word;
+    chars = kata.split('');
+    if (chars.includes(word) == false) {
+        lives = lives - 1;
+        if (lives == 0) {
+            alert('GAME OVER')
+            lives = 5
+        }
+    }
+    alert(lives);
+    return lives;
 }
