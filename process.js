@@ -25,10 +25,14 @@ function clickWord(key) {
     if (chars.includes(word) == false) {
         lives = lives - 1;
         if (lives == 0) {
-            alert('GAME OVER')
-            lives = 5
+            document.getElementsByClassName("image")[0].style.backgroundImage = `url(/image/nyawa${lives}.png)`;
+            alert('GAME OVER');
+            lives = 5;
+        }
+        else{
+            document.getElementsByClassName("image")[0].style.backgroundImage = `url(/image/nyawa${lives}.png)`;
         }
     }
-    alert(lives);
+//    alert(lives);
     return lives;
 }
