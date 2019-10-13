@@ -85,14 +85,13 @@ body{
 .gameanimation{
     width: relative;
     height: relative;
-    background: red;
     float: left;
 }
 
 .image{
     width: 270px;
     height: 270px;
-    background: url("image/nyawa0.png");
+    background: url("image/nyawa5.png");
     background-size: 600px 337.5px;
     background-repeat: no-repeat;
     background-position: center;
